@@ -49,12 +49,13 @@ public class World {
         // Create Forest
         world = new World
         {
-            worldName = "Forest",
+            worldName = "Plains",
             enemyScaling = 1,
-            backgroundPath = "Background/forest1",
-            soundPath = "Music/forestmusic",
+            backgroundPath = "Background/plains1",
+            soundPath = "Music/plainsmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 001), enemy.GetEnemyById(el, 010), enemy.GetEnemyById(el, 011), enemy.GetEnemyById(el, 012),
-            enemy.GetEnemyById(el, 013), enemy.GetEnemyById(el, 014), enemy.GetEnemyById(el, 016), enemy.GetEnemyById(el, 017)},
+            enemy.GetEnemyById(el, 013), enemy.GetEnemyById(el, 014), enemy.GetEnemyById(el, 016), enemy.GetEnemyById(el, 017), enemy.GetEnemyById(el, 052), 
+            enemy.GetEnemyById(el, 053), enemy.GetEnemyById(el, 054)},
             miniBoss = enemy.GetEnemyById(el, 002),
             boss = enemy.GetEnemyById(el, 003),
             weaponList = weapon.GetListByTier(wl, 01),
