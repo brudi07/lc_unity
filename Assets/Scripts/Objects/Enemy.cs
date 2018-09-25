@@ -1284,7 +1284,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 190,
-            enemyName = "Capricorn",
+            enemyName = "Shark",
             spriteList = { "Enemy/magikarp" },
             health = 20,
             armor = 40,
@@ -1328,28 +1328,28 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Qalupalik this looks like a green hypno with claws that steals eskimo children
+        // Mermaid priestess
         enemy = new Enemy
         {
             enemyId = 193,
-            enemyName = "Qalupalik",
+            enemyName = "Mermaid Priestess",
             spriteList = { "Enemy/hypno" },
             health = 85,
             armor = 30,
             magicResist = 25,
             xpToGive = 5,
             goldToGive = 5,
-            weaknesses = { "Fire", "Spear", "Sword", "Claw", "Spell", "Staff" },
-            resistances = { "Water", "Poison", "Dark", "Mace", "Dagger", "Lightning"}
+            weaknesses = { "Fire", "Dagger", "Sword", "Claw", "Spell", "Poison" },
+            resistances = { "Water", "Staff", "Dark", "Mace", "Spear", "Lightning"}
         };
         enemyList.Add(enemy);
         
-        // Zin this is a water spirit from kongolese folklore
+        // Mer-man Whale-rider
         enemy = new Enemy
         {
             enemyId = 194,
-            enemyName = "Zin",
-            spriteList = { "Enemy/gengar" },
+            enemyName = "Mer-man Cavalry",
+            spriteList = { "Enemy/kingdra" },
             health = 50,
             armor = 300,
             magicResist = 15,
@@ -1376,11 +1376,11 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Uilebheist this just means monster in scottish, but its gonna be a loch ness monster
+        // Now just called nessie
         enemy = new Enemy
         {
             enemyId = 196,
-            enemyName = "Uilebheist",
+            enemyName = "Nessie",
             spriteList = { "Enemy/lapras" },
             health = 150,
             armor = 5,
@@ -1408,11 +1408,11 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Hentybolus, Reaper of the Waves (not hentai)
+        // Normal kraken name
         enemy = new Enemy
         {
             enemyId = 198,
-            enemyName = "Hentybolus, Reaper of the Waves",
+            enemyName = "Garaxos, Reaper of the Waves",
             spriteList = { "Enemy/tentacruel" },
             health = 240,
             armor = 25,
@@ -1476,8 +1476,8 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 202,
-            enemyName = "Meganeura",
-            spriteList = { "Enemy/venonat" },
+            enemyName = "Giant Dragonfly",
+            spriteList = { "Enemy/beedrill" },
             health = 15,
             armor = 55,
             magicResist = 55,
@@ -1496,7 +1496,7 @@ public class Enemy {
             spriteList = { "Enemy/charmander" },
             health = 30,
             armor = 10,
-            magicResist = 30,
+            magicResist = 40,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Dark", "Ice", "Water", "Air" },
@@ -1504,12 +1504,12 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Bunyip
+        // Mo undead
         enemy = new Enemy
         {
             enemyId = 204,
-            enemyName = "Bunyip",
-            spriteList = { "Enemy/dewgong" },
+            enemyName = "Skeletal Knight",
+            spriteList = { "Enemy/marowak" },
             health = 65,
             armor = 90,
             magicResist = 10,
@@ -1616,19 +1616,19 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Mokele-Mbembe 
+        // Army of the dead/damned/whatever
         enemy = new Enemy
         {
             enemyId = 211,
-            enemyName = "Mokele-Mbembe",
+            enemyName = "Army of the Damned",
             spriteList = { "Enemy/nidoking" },
             health = 400,
             armor = 95,
             magicResist = 95,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Ice", "Air", "Poison", "Mace", "Spear", "Wand"},
-            resistances = { "Fire", "Water", "Sword", "Dagger", "Spell", "Lightning"},
+            weaknesses = { "Fire", "Light", "Earth", "Mace", "Spear", "Wand"},
+            resistances = { "Ice", "Water", "Sword", "Dagger", "Spell", "Lightning"},
         };
         enemyList.Add(enemy);
         
@@ -1824,6 +1824,390 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
+        // pupper
+        enemy = new Enemy
+        {
+            enemyId = 223,
+            enemyName = "Wolfman Berserker",
+            spriteList = { "Enemy/growlithe" },
+            health = 35,
+            armor = 40,
+            magicResist = 15,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Claw", "Spell", "Sword", "Water", "Ice", "Lightning" },
+            resistances = { "Mace", "Light", "Bow", "Gun", "Chakram", "Dark" }
+        };
+        enemyList.Add(enemy);
+        
+        // Valkyrie
+        enemy = new Enemy
+        {
+            enemyId = 224,
+            enemyName = "Valkyrie",
+            spriteList = { "Enemy/aerodactyl" },
+            health = 35,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Gun", "Bow", "Chakram", "Dark", "Air", "Spear" },
+            resistances = { "Fire", "Light", "Earth", "Sword", "Claw", "Staff" }
+        };
+        enemyList.Add(enemy);
+        
+        // Dwarf Soldier (bearded)
+        enemy = new Enemy
+        {
+            enemyId = 225,
+            enemyName = "Dwarf Soldier",
+            spriteList = { "Enemy/mrmime" },
+            health = 30,
+            armor = 55,
+            magicResist = 10,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Mace", "Lightning", "Dagger", "Wand", "Poison", "Ice" },
+            resistances = { "Staff", "Spell", "Spear", "Axe", "Sword", "Claw", "Water" }
+        };
+        enemyList.Add(enemy);
+        
+        // Dwarves are good at technology
+        enemy = new Enemy
+        {
+            enemyId = 226,
+            enemyName = "Dwarven Scout Drone",
+            spriteList = { "Enemy/shellder" },
+            health = 25,
+            armor = 10,
+            magicResist = 40,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spell", "Lightning", "Water", "Mace", "Dagger" },
+            resistances = { "Axe", "Sword", "Claw", "Staff", "Poison", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Ice troll
+        enemy = new Enemy
+        {
+            enemyId = 227,
+            enemyName = "Ice Troll",
+            spriteList = { "Enemy/hitmonchan" },
+            health = 55,
+            armor = 85,
+            magicResist = 35,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Gun", "Bow", "Chakram", "Mace", "Spear", "Earth"},
+            resistances = {"Dark", "Ice", "Poison", "Dagger", "Sword", "Water", "Air" }
+        };
+        enemyList.Add(enemy);
+        
+        // Werebear
+        enemy = new Enemy
+        {
+            enemyId = 228,
+            enemyName = "Werebear",
+            spriteList = { "Enemy/tauros" },
+            health = 100,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spear", "Light", "Axe", "Poison", "Staff", "Dark" },
+            resistances = { "Dagger", "Mace", "Water", "Spell", "Ice", "Wand"}
+        };
+        enemyList.Add(enemy);
+        
+        // big doggo
+        enemy = new Enemy
+        {
+            enemyId = 229,
+            enemyName = "Fenris",
+            spriteList = { "Enemy/arcanine" },
+            health = 65,
+            armor = 45,
+            magicResist = 75,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Sword", "Axe", "Claw", "Spear", "Wand", "Staff"},
+            resistances = { "Fire", "Ice", "Gun", "Bow", "Chakram", "Dagger"}
+        };
+        enemyList.Add(enemy);
+        
+        // Wolfman Longship
+        enemy = new Enemy
+        {
+            enemyId = 230,
+            enemyName = "Wolfman Longship",
+            spriteList = { "Enemy/lapras" },
+            health = 105,
+            armor = 155,
+            magicResist = 155,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Air", "Fire", "Gun", "Axe", "Bow", "Chakram" },
+            resistances = { "Water", "Ice", "Dark"}
+        };
+        enemyList.Add(enemy);
+        
+        // Fire Giant
+        enemy = new Enemy
+        {
+            enemyId = 231,
+            enemyName = "Fire Giant",
+            spriteList = { "Enemy/magmar" },
+            health = 135,
+            armor = 105,
+            magicResist = 105,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Sword", "Claw", "Water", "Earth", "Wand", "Ice"},
+            resistances = { "Fire", "Mace", "Spear", "Staff", "Axe", "Air"}
+        };
+        enemyList.Add(enemy);
+        
+        // Dwarven Runemech
+        enemy = new Enemy
+        {
+            enemyId = 232,
+            enemyName = "Dwarven Runemech",
+            spriteList = { "Enemy/kabutops" },
+            health = 65,
+            armor = 255,
+            magicResist = 120,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Mace", "Lightning", "Spell", "Water", "Ice", "Dagger" },
+            resistances = { "Sword", "Claw", "Poison", "Fire", "Air", "Staff"}
+        };
+        enemyList.Add(enemy);
+        
+        // Wolfman Jarl
+        enemy = new Enemy
+        {
+            enemyId = 233,
+            enemyName = "Wolfman Jarl",
+            spriteList = { "Enemy/machamp" },
+            health = 250,
+            armor = 10,
+            magicResist = 25,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Dagger", "Wand", "Axe", "Poison", "Ice", "Lightning" },
+            resistances = { "Mace", "Light", "Staff", "Sword", "Spear", "Dark" }
+        };
+        enemyList.Add(enemy);
+        
+        // Ymir Giantfather
+        enemy = new Enemy
+        {
+            enemyId = 234,
+            enemyName = "Ymir Giantfather",
+            spriteList = { "Enemy/snorlax" },
+            health = 600,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Fire", "Axe", "Earth", "Claw", "Wand", "Air"},
+            resistances = { "Sword", "Dagger", "Spell", "Ice", "Water", "Dark", "Light"},
+        };
+        enemyList.Add(enemy);
+        
+        // Yellow snow
+        enemy = new Enemy
+        {
+            enemyId = 235,
+            enemyName = "Yellow Snow",
+            spriteList = { "Enemy/grimer" },
+            health = 20,
+            armor = 40,
+            magicResist = 60,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spell", "Mace", "Claw", "Water", "Air", "Earth" },
+            resistances = { "Sword", "Dagger", "Staff", "Ice", "Poison", "Light" }
+        };
+        enemyList.Add(enemy);
+        
+        // Arctic Fox Assassin
+        enemy = new Enemy
+        {
+            enemyId = 236,
+            enemyName = "Arctic Fox Assassin",
+            spriteList = { "Enemy/growlithe" },
+            health = 30,
+            armor = 15,
+            magicResist = 35,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Sword", "Spear", "Staff", "Dark", "Poison", "Axe" },
+            resistances = { "Gun", "Bow", "Chakram", "Light", "Air", "Dagger" }
+        };
+        enemyList.Add(enemy);
+        
+        // Living Snowman
+        enemy = new Enemy
+        {
+            enemyId = 237,
+            enemyName = "Living Snowman",
+            spriteList = { "Enemy/electabuzz" },
+            health = 30,
+            armor = 15,
+            magicResist = 50,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Mace", "Fire", "Lightning", "Wand", "Water", "Air" },
+            resistances = { "Dagger", "Spear", "Ice", "Dark", "Light", "Spell"}
+        };
+        enemyList.Add(enemy);
+        
+        // Penguin Swarm
+        enemy = new Enemy
+        {
+            enemyId = 238,
+            enemyName = "Penguin Swarm",
+            spriteList = { "Enemy/seel" },
+            health = 45,
+            armor = 10,
+            magicResist = 10,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Dark", "Poison", "Sword", "Spell", "Dagger", "Claw" },
+            resistances = { "Mace", "Gun", "Bow", "Chakram", "Water", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Baba yaga
+        enemy = new Enemy
+        {
+            enemyId = 239,
+            enemyName = "Baba Yaga",
+            spriteList = { "Enemy/jynx" },
+            health = 60,
+            armor = 15,
+            magicResist = 105,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Gun", "Bow", "Chakram", "Spear", "Air"},
+            resistances = {"Dark", "Ice", "Poison", "Dagger", "Sword", "Water" }
+        };
+        enemyList.Add(enemy);
+        
+        // Yeti
+        enemy = new Enemy
+        {
+            enemyId = 240,
+            enemyName = "Yeti",
+            spriteList = { "Enemy/snorlax" },
+            health = 125,
+            armor = 5,
+            magicResist = 5,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spear", "Dark", "Axe", "Lightning", "Staff", "Poison" },
+            resistances = { "Claw", "Sword", "Water", "Spell", "Ice", "Fire"}
+        };
+        enemyList.Add(enemy);
+        
+        // Ice Wraith
+        enemy = new Enemy
+        {
+            enemyId = 241,
+            enemyName = "Ice Wraith",
+            spriteList = { "Enemy/cloister" },
+            health = 55,
+            armor = 145,
+            magicResist = 5,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spell", "Fire", "Air", "Chakram", "Bow", "Gun"},
+            resistances = { "Ice", "Poison", "Water", "Lightning", "Earth", "Mace"}
+        };
+        enemyList.Add(enemy);
+        
+        // Ice Drake
+        enemy = new Enemy
+        {
+            enemyId = 242,
+            enemyName = "Ice Drake",
+            spriteList = { "Enemy/dragonair" },
+            health = 105,
+            armor = 75,
+            magicResist = 255,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Fire", "Dagger", "Wand", "Gun", "Bow", "Chakram" },
+            resistances = { "Water", "Ice", "Dark", "Light", "Sword", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Aurora Spirit
+        enemy = new Enemy
+        {
+            enemyId = 243,
+            enemyName = "Aurora Spirit",
+            spriteList = { "Enemy/gastly" },
+            health = 85,
+            armor = 350,
+            magicResist = 25,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Fire", "Dark", "Air"},
+            resistances = { "Light", "Earth", "Poison"}
+        };
+        enemyList.Add(enemy);
+        
+        // Frostfire Phoenix
+        enemy = new Enemy
+        {
+            enemyId = 244,
+            enemyName = "Frostfire Phoenix",
+            spriteList = { "Enemy/moltres" },
+            health = 155,
+            armor = 75,
+            magicResist = 75,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Gun", "Bow", "Chakram", "Air", "Earth", "Dark" },
+            resistances = { "Mace", "Water", "Fire", "Lightning", "Staff", "Spear"}
+        };
+        enemyList.Add(enemy);
+        
+        // Pengu, Emperor of Penguins
+        enemy = new Enemy
+        {
+            enemyId = 245,
+            enemyName = "Pengu, Emperor of Penguins",
+            spriteList = { "Enemy/dewgong" },
+            health = 170,
+            armor = 100,
+            magicResist = 100,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Dark", "Poison", "Sword", "Spell", "Dagger", "Claw" },
+            resistances = { "Mace", "Gun", "Bow", "Chakram", "Water", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Zombie mammoth
+        enemy = new Enemy
+        {
+            enemyId = 246,
+            enemyName = "Zombie Mammoth",
+            spriteList = { "Enemy/tauros" },
+            health = 600,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Fire", "Light", "Gun", "Bow", "Chakram", "Dagger", "Sword", "Staff"},
+            resistances = { "Poison", "Dark", "Spell", "Ice", "Water", "Air", "Spear", "Mace"},
+        };
+        enemyList.Add(enemy);
+        
         /********************/
         /*** LEGENDARIES ***/
         /******************/
@@ -1864,4 +2248,5 @@ public class Enemy {
     }
  
 }
+
 
