@@ -51,7 +51,7 @@ public class Battle : MonoBehaviour
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue = enemy.health;
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
         GameObject.Find("EnemyArmor").GetComponent<Text>().text = "A: " + enemy.armor + " MR: " + enemy.magicResist;
-        GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) + 
+        GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) +
             Environment.NewLine + "R: " + string.Join(",", enemy.resistances.ToArray());
 
         // Weapon Buttons
@@ -139,7 +139,7 @@ public class Battle : MonoBehaviour
                 GameObject attack = Instantiate(attackAnimation, Input.mousePosition + new Vector3(0, -100, 0), UnityEngine.Random.rotation, transform);
                 attack.transform.SetParent(GameObject.Find("EnemyPanel").transform);
                 attack.transform.localScale = new Vector3(1.5f, 1.5f, 0);
-            }          
+            }
 
             // Trigger sound fx
             SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);
@@ -187,12 +187,12 @@ public class Battle : MonoBehaviour
 
     private void DotDamage()
     {
-        // DoT Damage 
+        // DoT Damage
         if (dotTimers.Count > 0)
         {
             foreach (Damage dot in dotTimers)
             {
-                //Debug.Log("Dot damage");
+                Debug.Log("Dot damage");
                 // Trigger floating text
                 ShowDamageText(dot);
 
@@ -221,7 +221,7 @@ public class Battle : MonoBehaviour
     {
         // Create location for floating text
         Vector3 location = GameObject.Find("EnemyPanel").transform.position;
-        //Vector3 offset = new Vector3(UnityEngine.Random.Range(-100, 100), 100, 0); 
+        //Vector3 offset = new Vector3(UnityEngine.Random.Range(-100, 100), 100, 0);
         Vector3 offset = new Vector3(UnityEngine.Random.Range(-100, 100), UnityEngine.Random.Range(75, 110), 0);
         if (damage.dot)
             offset = new Vector3(UnityEngine.Random.Range(-100, 100), UnityEngine.Random.Range(100, 120), 0);
@@ -367,7 +367,7 @@ public class Battle : MonoBehaviour
         }
     }
 
-    // Create a timer that starts when the boss spawns 
+    // Create a timer that starts when the boss spawns
     // If the player is unable to kill the boss in time they fail the stage
     private void BossTimer()
     {
@@ -400,6 +400,7 @@ public class Battle : MonoBehaviour
     // Anti-cheat, check if user clicks over 15 times in a second
     private void AntiCheat()
     {
+        const int maxClicks = 15;
         // Checks in 1 second intervals
         if (clickTimer < 1.0f)
         {
@@ -410,7 +411,7 @@ public class Battle : MonoBehaviour
                 //Debug.Log("clickCount: " + clickCount);
             }
             // Check if user has gone over max click amount
-            if (clickCount > 15)
+            if (clickCount > maxClicks)
             {
                 clickLimit = true;
                 player.name = "Cheater";
@@ -482,10 +483,18 @@ public class Battle : MonoBehaviour
     }
 
     // Load Town scene
-    private void GoToTown()
+    public void GoToTown()
     {
         SoundManager.sm.StopMusic();
         GameManager.gm.LoadScene("Town");
+    }
+
+    // Summon Boss
+    public void SummonBoss()
+    {
+        Debug.Log("Summon Boss");
+        world.currentStage = 99;
+        EnemyKilled();
     }
 
 }

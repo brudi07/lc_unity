@@ -155,7 +155,7 @@ public class World {
             suffixList = mod.GetListByTier(sl, 5)
         };
         worldList.Add(world);
-                                                                                         
+
         // Create Desert
         world = new World
         {

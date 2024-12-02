@@ -96,8 +96,8 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         transform.position = startPosition;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
         // Update outlines
-            GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = player.weapon1.GetRarityColor();
-            GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = player.weapon2.GetRarityColor();
+        GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = player.weapon1.GetRarityColor();
+        GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = player.weapon2.GetRarityColor();
         GameObject.Find("Weapon3Panel").GetComponent<Outline>().effectColor = player.weapon3.GetRarityColor();
         if (player.head != null)
             GameObject.Find("HeadPanel").GetComponent<Outline>().effectColor = player.head.GetRarityColor();
@@ -151,13 +151,13 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             Debug.Log("Store to non inventory");
             ShowFloatingText("Drag to inventory");
         }
-        // Item dragged to store 
+        // Item dragged to store
         else if (gameObject.GetComponent<ItemPanel>().type == "Store")
         {
             Debug.Log("Dragged to Store");
             // Do nothing
         }
-        // Item dragged to store 
+        // Item dragged to store
         else if (startObject.GetComponent<ItemPanel>().type == "Store" && gameObject.GetComponent<ItemPanel>().type == "Sell")
         {
             Debug.Log("Dragged to sell from store");

@@ -13,7 +13,7 @@ public class SoundManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 
     // While SoundManager is running don't destroy static ref
