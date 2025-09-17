@@ -132,7 +132,7 @@ public class Weapon : Item
         return tierList;
     }
 
-    // Get a list of all the rarities specified 
+    // Get a list of all the rarities specified
     public List<Weapon> GetListByRarity(List<Weapon> list, Rarity rarity)
     {
         List<Weapon> rarityList = new List<Weapon>();
@@ -862,7 +862,7 @@ public class Weapon : Item
         {
             itemId = 026101,
             name = "Windblade",
-            flavorText = "windbladesfx",
+            flavorText = "Whoosh",
             spritePath = "Icons/windblade",
             soundPath = "Sfx/windbladesfx",
             rarity = Rarity.Uncommon,
@@ -2447,7 +2447,7 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 2,
             strength = 12,
-            
+
         };
         weaponList.Add(weapon);
 
@@ -2651,7 +2651,7 @@ public class Weapon : Item
             tier = 3,
         };
         weaponList.Add(weapon);
-        
+
         // Create frying pan
         weapon = new Weapon
         {
@@ -2677,7 +2677,7 @@ public class Weapon : Item
             tier = 3,
         };
         weaponList.Add(weapon);
-        
+
         // Create bow
         weapon = new Weapon
         {
@@ -2702,7 +2702,7 @@ public class Weapon : Item
             tier = 3,
         };
         weaponList.Add(weapon);
-        
+
         // Create spell
         weapon = new Weapon
         {
@@ -3568,7 +3568,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         // Create horn
         weapon = new Weapon
         {
@@ -3594,7 +3594,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         // Create blackjack
         weapon = new Weapon
         {
@@ -3621,7 +3621,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         // Create mindblade
         weapon = new Weapon
         {
@@ -3647,7 +3647,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         // Create halberd
         weapon = new Weapon
         {
@@ -3675,7 +3675,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         // Create blackjack
         weapon = new Weapon
         {
@@ -3701,7 +3701,7 @@ public class Weapon : Item
             tier = 4,
         };
         weaponList.Add(weapon);
-        
+
         /***************/
         /*** TIER 5 ***/
         /*************/
@@ -4618,7 +4618,7 @@ public class Weapon : Item
             tier = 5,
         };
         weaponList.Add(weapon);
-        
+
         // Create hammer
         weapon = new Weapon
         {
@@ -4645,7 +4645,7 @@ public class Weapon : Item
             tier = 5,
         };
         weaponList.Add(weapon);
-        
+
         // Create master chief sword
         weapon = new Weapon
         {
@@ -4672,7 +4672,7 @@ public class Weapon : Item
 
         };
         weaponList.Add(weapon);
-        
+
         // Create mindblade
         weapon = new Weapon
         {
@@ -4698,7 +4698,7 @@ public class Weapon : Item
             tier = 5,
         };
         weaponList.Add(weapon);
-        
+
         // Create halberd
         weapon = new Weapon
         {
@@ -4725,7 +4725,7 @@ public class Weapon : Item
             tier = 5,
         };
         weaponList.Add(weapon);
-        
+
         // Create sword
         weapon = new Weapon
         {
@@ -4752,7 +4752,7 @@ public class Weapon : Item
             tier = 5,
         };
         weaponList.Add(weapon);
-        
+
         /***************/
         /*** TIER 6 ***/
         /*************/
@@ -5591,7 +5591,7 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 8,
             strength = 35,
-            
+
         };
         weaponList.Add(weapon);
 
@@ -5669,7 +5669,7 @@ public class Weapon : Item
             tier = 6,
         };
         weaponList.Add(weapon);
-        
+
         // Create saitama
         weapon = new Weapon
         {
@@ -5696,7 +5696,7 @@ public class Weapon : Item
             tier = 6,
         };
         weaponList.Add(weapon);
-        
+
         // Create baguette
         weapon = new Weapon
         {
@@ -5724,7 +5724,7 @@ public class Weapon : Item
 
         };
         weaponList.Add(weapon);
-        
+
         // Create spell
         weapon = new Weapon
         {
@@ -5749,7 +5749,7 @@ public class Weapon : Item
             tier = 6,
         };
         weaponList.Add(weapon);
-        
+
         // Create warglaive
         weapon = new Weapon
         {
@@ -5777,7 +5777,7 @@ public class Weapon : Item
             tier = 6,
         };
         weaponList.Add(weapon);
-        
+
         // Create fake spell
         weapon = new Weapon
         {
@@ -5804,7 +5804,7 @@ public class Weapon : Item
             tier = 6,
         };
         weaponList.Add(weapon);
-        
+
         /***************/
         /*** TIER 7 ***/
         /*************/
@@ -6082,7 +6082,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create holy dagger weapon
         weapon = new Weapon
         {
@@ -6228,7 +6228,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create rifle
         weapon = new Weapon
         {
@@ -6522,7 +6522,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Aquaman stuff
         weapon = new Weapon
         {
@@ -6717,7 +6717,7 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 8,
             strength = 35,
-            
+
         };
         weaponList.Add(weapon);
 
@@ -6794,7 +6794,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create saitama
         weapon = new Weapon
         {
@@ -6827,7 +6827,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create baguette
         weapon = new Weapon
         {
@@ -6856,7 +6856,7 @@ public class Weapon : Item
 
         };
         weaponList.Add(weapon);
-        
+
         // Create spell
         weapon = new Weapon
         {
@@ -6883,7 +6883,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create earth dagger
         weapon = new Weapon
         {
@@ -6910,7 +6910,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         // Create machine gun
         weapon = new Weapon
         {
@@ -6938,7 +6938,7 @@ public class Weapon : Item
             tier = 7,
         };
         weaponList.Add(weapon);
-        
+
         return weaponList;
     }
 
